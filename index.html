@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ナンプレ</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="game">
+    <h1>ナンプレ</h1>
+
+    <div class="info">
+      <label>
+        難易度：
+        <select id="difficulty">
+          <option value="easy">初級</option>
+          <option value="normal" selected>中級</option>
+          <option value="hard">上級</option>
+        </select>
+      </label>
+
+      <span>
+        ⏱ <span id="timer">00:00</span>
+      </span>
+    </div>
+
+    <div id="board" class="board"></div>
+
+    <div id="numbers" class="numbers"></div>
+
+    <div class="actions">
+      <button id="erase">消す</button>
+      <button id="hint">ヒント</button>
+      <button id="newGame">新しい問題</button>
+    </div>
+
+    <div id="message" class="message"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
